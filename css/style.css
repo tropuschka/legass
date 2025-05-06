@@ -176,13 +176,16 @@ ul {
 
 .menu-item {
   display: inline-block;
-  padding: 20px;
   text-transform: uppercase;
   font-weight: bold;
   font-family: "Cormorant Garamond", serif;
   background-color: rgba(255, 0, 0, 0);
   font-size: 22px;
   border-radius: 40px;
+  padding: 20px;
+}
+.menu-item a {
+  padding: 20px;
 }
 .menu-item .submenu-item {
   visibility: hidden;
