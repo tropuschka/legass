@@ -12,13 +12,7 @@ main {
   min-height: 100vh;
 }
 
-@media (min-width: 1376px) {
-  .text-block-left {
-    width: 60%;
-    top: 40vh;
-    margin: auto 0;
-    position: absolute;
-  }
+@media (min-width: 1501px) {
   .logo-block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -26,32 +20,8 @@ main {
     position: absolute;
     width: 30%;
   }
-  .tab-paragraph {
-    text-indent: 40px;
-  }
 }
-@media (max-width: 1375px) {
-  .text-block-left {
-    width: 40%;
-    top: 0;
-    margin: auto 0;
-    position: absolute;
-  }
-  .img-block {
-    max-width: 45%;
-  }
-  .logo-block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: absolute;
-    width: 30%;
-  }
-  .tab-paragraph {
-    text-indent: 40px;
-  }
-}
-@media (max-width: 1225px) {
+@media (max-width: 1500px) {
   .header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -64,9 +34,6 @@ main {
         -ms-flex-align: center;
             align-items: center;
   }
-  .img-block img {
-    max-width: 30vw;
-  }
   .logo-block {
     position: relative;
     display: -webkit-inline-box;
@@ -76,6 +43,30 @@ main {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+  }
+}
+@media (min-width: 1376px) {
+  .text-block-left {
+    width: 60%;
+    top: 40vh;
+    margin: auto 0;
+    position: absolute;
+  }
+}
+@media (max-width: 1375px) {
+  .text-block-left {
+    width: 40%;
+    top: 0;
+    margin: auto 0;
+    position: absolute;
+  }
+  .img-block {
+    max-width: 45%;
+  }
+}
+@media (max-width: 1225px) {
+  .img-block img {
+    max-width: 30vw;
   }
   nav {
     display: -webkit-inline-box;
@@ -111,9 +102,6 @@ main {
     visibility: hidden;
     position: absolute;
   }
-  .tab-paragraph {
-    text-indent: 0;
-  }
 }
 @media (max-width: 735px) {
   li, p {
@@ -144,7 +132,7 @@ h2 {
   font-family: "Noto Serif SC", serif;
 }
 
-p {
+p, li {
   font-size: 24.2px;
   padding-bottom: 17.6px;
   display: block;
@@ -313,22 +301,16 @@ ul {
 }
 
 .card {
-  display: block;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: right;
-      -ms-flex-align: right;
-          align-items: right;
-  width: 50vw;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  padding: auto;
-  margin: 0 15px 15px;
+  display: inline-block;
+  width: 50px;
+  height: 100px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #EFEACD;
+  color: #0E0000;
 }
-.card h3 {
-  color: #990F2F;
+.card img {
+  height: 50px;
 }
 
 .wide-pad {
@@ -343,21 +325,9 @@ ul {
 }
 
 .cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 70%;
+  width: 100%;
   padding: 20px;
-  margin: 0 auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  vertical-align: top;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-.cards img {
-  height: 100px;
+  text-align: center;
 }
 
 .mid-colored {
