@@ -12,16 +12,18 @@ main {
   min-height: 100vh;
 }
 
-@media (min-width: 1501px) {
+@media (min-width: 1536px) {
   .logo-block {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     position: absolute;
-    width: 30%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
-@media (max-width: 1500px) {
+@media (max-width: 1535px) {
   .header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -212,6 +214,11 @@ ul {
   font-size: 22px;
   border-radius: 40px;
   padding: 20px;
+  text-align: center;
+  vertical-align: middle;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .menu-item a {
   padding: 20px;
