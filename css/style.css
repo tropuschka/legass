@@ -256,6 +256,9 @@ ul {
   padding: 50px 15%;
   display: flexbox;
 }
+.main a {
+  text-decoration: underline;
+}
 .main * {
   max-height: 60vh;
 }
