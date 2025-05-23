@@ -195,8 +195,6 @@ a {
 
 .contact-link {
   color: #990F2F;
-}
-.contact-link:hover {
   text-decoration: underline;
 }
 
@@ -222,17 +220,24 @@ ul {
   visibility: hidden;
   position: absolute;
 }
-.menu-item:hover {
-  background-color: #990F2F;
-  -webkit-transition: 1s;
-  transition: 1s;
-  text-decoration: none;
+@media (pointer: fine) {
+  .menu-item:hover {
+    background-color: #990F2F;
+    -webkit-transition: 1s;
+    transition: 1s;
+    text-decoration: none;
+  }
+  .menu-item:hover .submenu-item {
+    visibility: visible;
+  }
+  .menu-item:hover a {
+    color: #FFFFFF;
+  }
 }
-.menu-item:hover .submenu-item {
-  visibility: visible;
-}
-.menu-item:hover a {
-  color: #FFFFFF;
+@media (pointer: coarse) {
+  .menu-item:active .submenu-item {
+    visibility: visible;
+  }
 }
 
 .active {
